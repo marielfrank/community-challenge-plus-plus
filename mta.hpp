@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 
+//#2
 std::vector<double> regular_fares = {2.75, 32.00, 121.00};
 // std::vector<double> reduced_fares = {1.35, 16.00, 60.50};
 std::vector<std::string> fare_options = {"pay per ride", "7 day unlimited", "30 day unlimited"};
