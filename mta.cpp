@@ -2,6 +2,7 @@
 #include "mta.hpp"
 
 int main() {
+  
   // #1
   int rides, days;
   std::cout << "Welcome to the MTA best fare calculator!\n";
