@@ -1,29 +1,12 @@
 #include <iostream>
 #include <vector>
 
-//#2
+// #2
 std::vector<double> regular_fares = {2.75, 32.00, 121.00};
 // std::vector<double> reduced_fares = {1.35, 16.00, 60.50};
 std::vector<std::string> fare_options = {"pay per ride", "7 day unlimited", "30 day unlimited"};
 
-// void get_best_fare (int rides, int days, bool reduced_fare) {
-
-//   std::vector<double> fares;
-
-//   if (reduced_fare) {
-//     fares = reduced_fares;
-//   } else {
-//     fares = regular_fares;
-//   }
-  
-//   if (rides > 45 && days > 21) {
-
-//     std::cout << "Get the 30 day unlimited at " << fares[2]/rides << " per ride.\n"; 
-  
-//   }
-
-// }
-
+// #4
 std::vector<double> cost_per_ride(int rides, int days) {
 
   double ppr_price = ((2.75 * rides) + (rides * 0.05)) / rides;
@@ -41,6 +24,8 @@ std::vector<double> cost_per_ride(int rides, int days) {
 
 }
 
+
+// #3
 void get_best_fare(int rides, int days) {
 
   std::vector<double> ride_prices = cost_per_ride(rides, days);
